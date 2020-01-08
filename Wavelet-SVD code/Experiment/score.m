@@ -1,0 +1,10 @@
+I_original = imread("lena.png");
+w1 = imread("w1.png");
+w2 = imread("w2.png");
+w3 = imread("w3.png");
+w4 = imread("w4.png");
+I_original = imresize(I_original, size(w1));
+disp(corr2(I_original,w1));
+disp(corr2(I_original,w2));
+disp(corr2(I_original,w3));
+disp(corr2(I_original,w4));
